@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "subvid"
+version = "0.1.0"
+description = "A video subtitling project"
+authors = ["hrhrng"]
+readme = "README.md"
+packages = [{include = "subvid", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+whisper = "^1.1.10"
+moviepy = "^1.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+subvid = "subvid.main:main"
