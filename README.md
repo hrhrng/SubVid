@@ -27,3 +27,6 @@ After installation, you can run the project using:
 ## Usage
 
 To extract SRT subtitles from a video:
+
+poetry run subvid /path/to/your/video.mp4 /path/to/output/subtitles.srt
+

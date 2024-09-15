@@ -14,7 +14,7 @@ def transcribe_audio(audio_path):
     result = model.transcribe(audio_path)
     return result["segments"]
 
-def format_time(seconds):
+def format_time(seconds) -> str:
     hours = int(seconds / 3600)
     minutes = int((seconds % 3600) / 60)
     seconds = seconds % 60
